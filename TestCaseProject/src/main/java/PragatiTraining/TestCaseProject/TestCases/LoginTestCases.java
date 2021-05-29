@@ -1,14 +1,22 @@
 package PragatiTraining.TestCaseProject.TestCases;
 
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+
 import PragatiTraining.TestCaseProject.Pages.LoginPage;
 
 public class LoginTestCases {
 	LoginPage pg1;
 	
+	@BeforeClass
+	@Parameters({"Browser"})
 	public void Init() {
-		pg1=new LoginPage("chrome");
+		pg1=new LoginPage("CHROME");
 		
 	}
+	@Test
 	public void TestLoginWithValidCredential() {
 		
 		/*
@@ -22,13 +30,14 @@ public class LoginTestCases {
 		pg1.DoLogin("", "");
 		
 	}
-	
+	@Test
 	public void TestLoginWithUsernameFieldBlank() {
 		
 		pg1.EnterUserName("");
 		pg1.ClickSignInButton();
 		
 	}
+	@Test
 	
 	public void TestLoginWithPasswordFieldBlank() {
 		

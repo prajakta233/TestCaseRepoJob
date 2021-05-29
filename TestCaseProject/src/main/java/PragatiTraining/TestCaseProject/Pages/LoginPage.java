@@ -4,17 +4,20 @@ import PragatiTraining.AutomationFrameworkAPI.WebTest;
 import PragatiTraining.AutomationFrameworkAPI.Utilities.Utils;
 import java.util.HashMap;
 
+import org.testng.annotations.Test;
+
 
 public class LoginPage {
 	
 	WebTest T;
-	//public HashMap<String,String>ObjectRepo=new HashMap<String,String>();
+	
 	public LoginPage(String BrowserName) {
 		T=new WebTest();
 		Utils.InitialisEnvWars();
 		T.StartTest(BrowserName);
-		//T.CreateObjectRepository("LoginPage");
+		T.CreateObjectRepository("LoginPage");
 	}
+	
 	
 	public void DoLogin(String UserName,String Password) {
 		EnterUserName(UserName);
@@ -39,7 +42,7 @@ public class LoginPage {
 	
 	
 	public void ClickSignInButton() {
-		T.ClickElement(T.ObjectRepo.get("SigninButton"));
+		T.ClickElement(T.ObjectRepo.get("SignInBtn"));
 	    System.out.println("I'm in test case project");	
 	}
 	

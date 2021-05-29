@@ -1,0 +1,19 @@
+<suite name="TestCase">
+<parameter name="Browser" value="CHROME"/>
+   
+  <test name="LoginPage">
+       <classes>
+          <class name="PragatiTraining.TestCaseProject.Pages.LoginPage">
+          </class>
+       </classes> 
+    </test>
+    
+      <test name="LoginTestCases">
+       <classes>
+          <class name="PragatiTraining.TestCaseProject.TestCases.LoginTestCases">
+          </class>
+       </classes> 
+    </test>
+
+
+</suite>

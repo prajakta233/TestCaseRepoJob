@@ -1,0 +1,5 @@
+APPLICATIONURL,https://opensource-demo.orangehrmlive.com/
+CHROMEDRIVER,D:\Drivers\chromedriver.exe
+FIREFOXDRIVER,D:\Drivers\geckodriver.exe
+ObjectRepositoryLocation,D:\EclipseProject\TestCaseProject\TestCaseProject\ObjectRepositoryLocation
+DataFilesLocation,D:\EclipseProject\TestCaseProject\TestCaseProject\DataFiles
