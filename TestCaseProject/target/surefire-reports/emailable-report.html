@@ -8,10 +8,32 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">32</td><td></td><td></td></tr>
+<tr><th colspan="8">TestCase</th></tr>
+<tr><td><a href="#t0">LoginPage</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">22</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">LoginTestCases</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">46,069</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num attn">3</th><th class="num">46,091</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4" class="invisible"/></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TestCase</th></tr></tbody><tbody id="t0"><tr><th colspan="4" class="invisible"/></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">LoginTestCases &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">PragatiTraining.TestCaseProject.TestCases.LoginTestCases</td><td><a href="#m0">TestLoginWithPasswordFieldBlank</a></td><td rowspan="1">1622264344097</td><td rowspan="1">4</td></tr><tr class="failedeven"><td><a href="#m1">TestLoginWithUsernameFieldBlank</a></td><td rowspan="1">1622264344202</td><td rowspan="1">1</td></tr><tr class="failedeven"><td><a href="#m2">TestLoginWithValidCredential</a></td><td rowspan="1">1622264344220</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Surefire test</h2></body>
+<h2>LoginPage</h2><h2>LoginTestCases</h2><h3 id="m0">PragatiTraining.TestCaseProject.TestCases.LoginTestCases#TestLoginWithPasswordFieldBlank</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at PragatiTraining.AutomationFrameworkAPI.WebTest.EnterText(WebTest.java:106)
+	at PragatiTraining.TestCaseProject.Pages.LoginPage.EnterPassword(LoginPage.java:40)
+	at PragatiTraining.TestCaseProject.TestCases.LoginTestCases.TestLoginWithPasswordFieldBlank(LoginTestCases.java:44)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">PragatiTraining.TestCaseProject.TestCases.LoginTestCases#TestLoginWithUsernameFieldBlank</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at PragatiTraining.AutomationFrameworkAPI.WebTest.EnterText(WebTest.java:106)
+	at PragatiTraining.TestCaseProject.Pages.LoginPage.EnterUserName(LoginPage.java:35)
+	at PragatiTraining.TestCaseProject.TestCases.LoginTestCases.TestLoginWithUsernameFieldBlank(LoginTestCases.java:36)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">PragatiTraining.TestCaseProject.TestCases.LoginTestCases#TestLoginWithValidCredential</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at PragatiTraining.AutomationFrameworkAPI.WebTest.EnterText(WebTest.java:106)
+	at PragatiTraining.TestCaseProject.Pages.LoginPage.EnterUserName(LoginPage.java:35)
+	at PragatiTraining.TestCaseProject.Pages.LoginPage.DoLogin(LoginPage.java:23)
+	at PragatiTraining.TestCaseProject.TestCases.LoginTestCases.TestLoginWithValidCredential(LoginTestCases.java:30)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
 </html>

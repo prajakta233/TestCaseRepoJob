@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 50.688 s <<< FAILURE! - in TestSuite
+TestLoginWithPasswordFieldBlank(PragatiTraining.TestCaseProject.TestCases.LoginTestCases)  Time elapsed: 0.109 s  <<< FAILURE!
+java.lang.NullPointerException
+	at PragatiTraining.TestCaseProject.TestCases.LoginTestCases.TestLoginWithPasswordFieldBlank(LoginTestCases.java:44)
+
+TestLoginWithUsernameFieldBlank(PragatiTraining.TestCaseProject.TestCases.LoginTestCases)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at PragatiTraining.TestCaseProject.TestCases.LoginTestCases.TestLoginWithUsernameFieldBlank(LoginTestCases.java:36)
+
+TestLoginWithValidCredential(PragatiTraining.TestCaseProject.TestCases.LoginTestCases)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at PragatiTraining.TestCaseProject.TestCases.LoginTestCases.TestLoginWithValidCredential(LoginTestCases.java:30)
+

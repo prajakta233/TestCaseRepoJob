@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [TestCase]">
+  <parameter name="Browser" value="CHROME"/>
+  <test thread-count="5" verbose="0" name="LoginTestCases(failed)">
+    <classes>
+      <class name="PragatiTraining.TestCaseProject.TestCases.LoginTestCases">
+        <methods>
+          <include name="TestLoginWithPasswordFieldBlank"/>
+          <include name="TestLoginWithUsernameFieldBlank"/>
+          <include name="Init"/>
+          <include name="TestLoginWithValidCredential"/>
+        </methods>
+      </class> <!-- PragatiTraining.TestCaseProject.TestCases.LoginTestCases -->
+    </classes>
+  </test> <!-- LoginTestCases(failed) -->
+</suite> <!-- Failed suite [TestCase] -->

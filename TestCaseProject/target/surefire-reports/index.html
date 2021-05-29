@@ -24,23 +24,23 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
-      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
-          <img src="collapseall.gif" class="collapse-all-icon">
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-passed">Surefire suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-TestCase">
+              <span class="suite-name border-failed">TestCase</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
-                    <span>[unset file name]</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-TestCase">
+                    <span>D:\EclipseProject\TestCaseProject\TestCaseProject\TestCase.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" class="navigator-link " panel-name="testlist-TestCase">
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="group-TestCase">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="times-TestCase">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="reporter-TestCase">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-TestCase">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="chronological-TestCase">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,7 +93,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">0 methods,   </span>
+                    <span class="method-stats">3 methods, 3 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestCase" class="hide-methods failed suite-TestCase"> (hide)</a> <!-- hide-methods failed suite-TestCase -->
+                      <a href="#" panel-name="suite-TestCase" class="show-methods failed suite-TestCase"> (show)</a> <!-- show-methods failed suite-TestCase -->
+                    </span>
+                    <div class="method-list-content failed suite-TestCase">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestCase" title="PragatiTraining.TestCaseProject.TestCases.LoginTestCases" hash-for-method="TestLoginWithPasswordFieldBlank">TestLoginWithPasswordFieldBlank</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestCase" title="PragatiTraining.TestCaseProject.TestCases.LoginTestCases" hash-for-method="TestLoginWithUsernameFieldBlank">TestLoginWithUsernameFieldBlank</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestCase" title="PragatiTraining.TestCaseProject.TestCases.LoginTestCases" hash-for-method="TestLoginWithValidCredential">TestLoginWithValidCredential</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestCase -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -104,88 +128,185 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-        </div> <!-- panel Surefire_suite -->
-        <div panel-name="test-xml-Surefire_suite" class="panel">
+        <div panel-name="suite-TestCase" class="panel TestCase">
+          <div class="suite-TestCase-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">PragatiTraining.TestCaseProject.TestCases.LoginTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestLoginWithPasswordFieldBlank">
+                  </a> <!-- TestLoginWithPasswordFieldBlank -->
+                  <span class="method-name">TestLoginWithPasswordFieldBlank</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at PragatiTraining.AutomationFrameworkAPI.WebTest.EnterText(WebTest.java:106)
+	at PragatiTraining.TestCaseProject.Pages.LoginPage.EnterPassword(LoginPage.java:40)
+	at PragatiTraining.TestCaseProject.TestCases.LoginTestCases.TestLoginWithPasswordFieldBlank(LoginTestCases.java:44)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestLoginWithUsernameFieldBlank">
+                  </a> <!-- TestLoginWithUsernameFieldBlank -->
+                  <span class="method-name">TestLoginWithUsernameFieldBlank</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at PragatiTraining.AutomationFrameworkAPI.WebTest.EnterText(WebTest.java:106)
+	at PragatiTraining.TestCaseProject.Pages.LoginPage.EnterUserName(LoginPage.java:35)
+	at PragatiTraining.TestCaseProject.TestCases.LoginTestCases.TestLoginWithUsernameFieldBlank(LoginTestCases.java:36)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestLoginWithValidCredential">
+                  </a> <!-- TestLoginWithValidCredential -->
+                  <span class="method-name">TestLoginWithValidCredential</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at PragatiTraining.AutomationFrameworkAPI.WebTest.EnterText(WebTest.java:106)
+	at PragatiTraining.TestCaseProject.Pages.LoginPage.EnterUserName(LoginPage.java:35)
+	at PragatiTraining.TestCaseProject.Pages.LoginPage.DoLogin(LoginPage.java:23)
+	at PragatiTraining.TestCaseProject.TestCases.LoginTestCases.TestLoginWithValidCredential(LoginTestCases.java:30)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestCase-class-failed -->
+        </div> <!-- panel TestCase -->
+        <div panel-name="test-xml-TestCase" class="panel">
           <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\EclipseProject\TestCaseProject\TestCaseProject\TestCase.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;TestCase&quot;&gt;
+  &lt;parameter name=&quot;Browser&quot; value=&quot;CHROME&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;LoginPage&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;PragatiTraining.TestCaseProject.AppTest&quot;/&gt;
+      &lt;class name=&quot;PragatiTraining.TestCaseProject.Pages.LoginPage&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Surefire test --&gt;
-&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+  &lt;/test&gt; &lt;!-- LoginPage --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;LoginTestCases&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;PragatiTraining.TestCaseProject.TestCases.LoginTestCases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LoginTestCases --&gt;
+&lt;/suite&gt; &lt;!-- TestCase --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Surefire_suite" class="panel">
+        <div panel-name="testlist-TestCase" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Surefire suite</span>
+            <span class="header-content">Tests for TestCase</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Surefire test (1 class)</span>
+                <span class="test-name">LoginPage (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">LoginTestCases (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Surefire_suite" class="panel">
+        <div panel-name="group-TestCase" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Surefire suite</span>
+            <span class="header-content">Groups for TestCase</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Surefire_suite" class="panel">
+        <div panel-name="times-TestCase" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Surefire suite</span>
+            <span class="header-content">Times for TestCase</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Surefire_suite');
-function tableData_Surefire_suite() {
+suiteTableInitFunctions.push('tableData_TestCase');
+function tableData_TestCase() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(0);
-window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TestLoginWithPasswordFieldBlank')
+data.setCell(0, 2, 'PragatiTraining.TestCaseProject.TestCases.LoginTestCases')
+data.setCell(0, 3, 4);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TestLoginWithUsernameFieldBlank')
+data.setCell(1, 2, 'PragatiTraining.TestCaseProject.TestCases.LoginTestCases')
+data.setCell(1, 3, 1);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TestLoginWithValidCredential')
+data.setCell(2, 2, 'PragatiTraining.TestCaseProject.TestCases.LoginTestCases')
+data.setCell(2, 3, 0);
+window.suiteTableData['TestCase']= { tableData: data, tableDiv: 'times-div-TestCase'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
-              <div id="times-div-Surefire_suite">
-              </div> <!-- times-div-Surefire_suite -->
+              <span class="suite-total-time">Total running time: 5 ms</span>
+              <div id="times-div-TestCase">
+              </div> <!-- times-div-TestCase -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Surefire_suite" class="panel">
+        <div panel-name="reporter-TestCase" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Surefire suite</span>
+            <span class="header-content">Reporter output for TestCase</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+        <div panel-name="ignored-methods-TestCase" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Surefire_suite" class="panel">
+        <div panel-name="chronological-TestCase" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">PragatiTraining.TestCaseProject.TestCases.LoginTestCases</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">Init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestLoginWithPasswordFieldBlank</span>
+                <span class="method-start">45785 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestLoginWithUsernameFieldBlank</span>
+                <span class="method-start">45890 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestLoginWithValidCredential</span>
+                <span class="method-start">45908 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
